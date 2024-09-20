@@ -1,0 +1,25 @@
+/* Base styles for mobile screens */
+body {
+    background-color: peru; /* Background color for body */
+    color: bisque;          /* Text color for body */
+    font-family: Arial, sans-serif; /* Font family for body */
+}
+
+/* Main content area styles */
+main {
+    background-color: saddlebrown; /* Background color for main */
+    color: gainsboro;               /* Text color for main */
+}
+
+/* Media query for larger screens */
+@media (min-width: 750px) {
+    body {
+        background-color: maroon; /* Background color for larger screens */
+        color: moccasin;          /* Text color for larger screens */
+    }
+
+    /* Header text styles */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: Georgia, serif; /* Serif font for headers */
+    }
+}
