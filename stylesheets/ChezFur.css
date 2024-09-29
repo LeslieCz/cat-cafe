@@ -7,8 +7,24 @@ body {
 
 /* Main content area styles */
 main {
-    background-color: saddlebrown; /* Background color for main */
-    color: gainsboro;               /* Text color for main */
+    background-color: saddlebrown; 
+    color: gainsboro;
+}
+
+/* CSS for all images in the main content */
+main img {
+    width: 50%;      /* Make the image take up the full width of the parent */
+    height: auto;     /* Maintain the aspect ratio */
+    display: block;   /* Ensures there’s no extra space below the image */
+}
+
+/* Header styles for the image will leave it at the top for our logo*/
+header {
+    background-image: url('../images/LogoLarge.png');
+    min-height: 100px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
 }
 
 /* Media query for larger screens */
@@ -20,6 +36,15 @@ main {
 
     /* Header text styles */
     h1, h2, h3, h4, h5, h6 {
-        font-family: Georgia, serif; /* Serif font for headers */
+        font-family: Georgia, serif;
+    }
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    header {
+        background-image: url('../images/LogoSmall.png');
+        min-height: 50px; /* Height for small screens */
+        background-position: right top;
     }
 }
