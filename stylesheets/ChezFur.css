@@ -30,21 +30,19 @@ header {
 /* Media query for larger screens */
 @media (min-width: 750px) {
     body {
-        background-color: maroon; /* Background color for larger screens */
-        color: moccasin;          /* Text color for larger screens */
+        background-color: maroon; /* Background color for small screens */
+        color: moccasin;          /* Text color for small screens */
     }
 
-    /* Header text styles */
-    h1, h2, h3, h4, h5, h6 {
-        font-family: Georgia, serif;
-    }
-}
-
-/* Media query for small screens */
-@media (max-width: 600px) {
     header {
         background-image: url('../images/LogoSmall.png');
         min-height: 50px; /* Height for small screens */
         background-position: right top;
+        background-repeat: no-repeat; /* Ensure it doesn't repeat */
+    }
+
+    /* Header text styles for small screens */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: Georgia, serif; /* Font for small screens */
     }
 }
