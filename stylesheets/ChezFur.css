@@ -58,13 +58,19 @@ header {
 
 /* Navigation styles */
 nav a {
-    color: #0D0D0D; /* Original link color */
+    color: #ad2e2e; /* Original link color */
     text-decoration: none; /* Remove underline */
+    transition: color 0.3s, font-size 0.3s;
 }
 
 nav a:hover {
-    color: #B33232; /* Updated hover color */
+    color: #FF6347; /* Updated hover color */
     font-size: 1.1em; /* Increase size on hover */
+}
+
+nav a:focus {
+    outline: none; /* Remove default outline for focused links */
+    border-bottom: 2px solid #FF6347; /* Add an underline effect on focus */
 }
 
 /* New styles for menu items */
@@ -109,10 +115,10 @@ figcaption {
 }
 
 .menu-title {
-    font-family: 'Cursive', sans-serif; /* Cursive font for menu title */
+    font-family: 'Cursive'; /* Cursive font for menu title */
     text-align: center; /* Center text */
     font-size: 2em; /* Larger font size */
-    color: #444; /* Dark gray color */
+    color: #0D0D0D; /* Dark gray color */
 }
 
 .allergy-info {
@@ -124,11 +130,12 @@ figcaption {
 }
 
 .menu-section {
+    background-image: url("../images/paper.gif"); /* Paper background image */
     background-color: #fff8dc; /* Cornsilk background for a paper-like effect */
     width: 80%; /* Width of the menu section */
     padding: 20px; /* Padding for the section */
-    margin: 20px auto; /* Center the section */
-    border-radius: 5px; /* Rounded corners */
+    margin: 10px auto; /* Center the section */
+    border-radius: 20px; /* Rounded corners */
     border: 2px solid #d3b673; /* Goldish border */
 }
 
@@ -137,10 +144,16 @@ figcaption {
     width: 80%; /* Width of the host section */
     padding: 20px; /* Padding for the section */
     margin: 20px auto; /* Center the section */
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 10px; /* Rounded corners */
     border: 2px solid #d3b673; /* Goldish border to match the menu section */
 }
 
+.centered-image {
+    display: block; /* Makes the image block level */
+    margin: 0 auto; /* Centers the image */
+    max-width: 100%; /* Responsive width */
+    height: auto; /* Maintains aspect ratio */
+}
 
 /* Media query for larger screens */
 @media (min-width: 750px) {
