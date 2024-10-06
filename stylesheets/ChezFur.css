@@ -19,14 +19,14 @@ All text colors have been selected to provide a good contrast against the backgr
 
 /* Base styles for mobile screens */
 body {
-    background-color: #EDDCBA; /* Background color for body */
+    background-color: #c9ba9b; /* Background color for body */
     color: #0D0D0D; /* Text color for body */
     font-family: Arial, sans-serif; /* Font family for body */
 }
 
 /* Aside styles */
 aside {
-    background-color: #efddb9; /* Use a contrasting color from your palette */
+    background-color: #ecd6a9; /* Use a contrasting color from your palette */
     color: #1f1d1d; /* Text color for the aside */
     padding: 15px; /* Add some padding */
     margin: 15px 0; /* Margin to create space above and below */
