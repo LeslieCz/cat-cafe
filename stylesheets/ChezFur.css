@@ -1,14 +1,43 @@
+/* 
+Color Palette and Contrast Ratios
+
+The color palette for this project was sourced from various websites, primarily starting with W3Schools. 
+I was particularly fond of the background color, so I explored multiple sites to ensure that the colors 
+would maintain a contrast ratio of 4.1 or higher as recommended for accessibility. 
+
+I used the WebAIM Contrast Checker to validate the color choices and adjusted them as needed until they 
+passed the contrast ratio requirements. 
+
+Here are the key colors used in the design:
+- Body Background: #EDDCBA
+- Main Background: #C6B89C
+- Link Color: #0D0D0D
+- Hover Link Color: #B33232
+
+All text colors have been selected to provide a good contrast against the background colors to ensure readability.
+*/
+
 /* Base styles for mobile screens */
 body {
-    background-color: peru; /* Background color for body */
-    color: bisque;          /* Text color for body */
+    background-color: #EDDCBA; /* Background color for body */
+    color: #0D0D0D;          /* Text color for body */
     font-family: Arial, sans-serif; /* Font family for body */
+}
+
+/* Aside styles */
+aside {
+    background-color: #efddb9; /* Use a contrasting color from your palette */
+    color: #1f1d1d;            /* Text color for the aside */
+    padding: 15px;             /* Add some padding */
+    margin: 15px 0;           /* Margin to create space above and below */
+    border-radius: 5px;       /* Optional: rounded corners */
 }
 
 /* Main content area styles */
 main {
-    background-color: saddlebrown; 
-    color: gainsboro;
+    background-color: #C6B89C;
+    color: #000000;
+    text-align: center; /* Center all text and images in main */
 }
 
 /* CSS for all images in the main content */
@@ -27,22 +56,71 @@ header {
     background-size: contain;
 }
 
+/* Navigation styles */
+nav a {
+    color: #0D0D0D; /* Original link color */
+    text-decoration: none; /* Remove underline */
+}
+
+nav a:hover {
+    color: #B33232; /* Updated hover color */
+    font-size: 1.1em; /* Increase size on hover */
+}
+
+
+/* New styles for menu items */
+ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes default padding */
+}
+
+li {
+    font-size: 1.25em; /* Makes list items larger */
+}
+
+dt {
+    font-weight: bold; /* Makes description terms bold */
+}
+
+dd {
+    font-style: italic; /* Italicizes descriptions */
+}
+
+/* Cat images styles */
+.cat-figure {
+    text-align: inline-block;
+    margin: 20px;
+}
+
+.cat-image {
+    border-radius: 50%; /* Makes images circular */
+    width: 80px; /* Default for small screens */
+    height: 80px; /* Default for small screens */
+    object-fit: cover; /* Ensures the image covers the container */
+}
+
+/* Figure caption styles */
+figcaption {
+    font-weight: bold; /* Makes captions bold */
+    margin-top: 10px; /* Space between image and caption */
+}
+
 /* Media query for larger screens */
 @media (min-width: 750px) {
     body {
-        background-color: maroon; /* Background color for small screens */
-        color: moccasin;          /* Text color for small screens */
-    }
-
-    header {
-        background-image: url('../images/LogoSmall.png');
-        min-height: 50px; /* Height for small screens */
-        background-position: right top;
-        background-repeat: no-repeat; /* Ensure it doesn't repeat */
+        background-color: #F5E5C3; /* Background color for small screens */
+        color: #0D0D0D;          /* Text color for small screens */
     }
 
     /* Header text styles for small screens */
     h1, h2, h3, h4, h5, h6 {
         font-family: Georgia, serif; /* Font for small screens */
     }
+
+    /* Media query for larger screens */
+    .cat-image {
+        width: 180px; /* Width for large screens */
+        height: 180px; /* Height for large screens */
+    }
 }
+
