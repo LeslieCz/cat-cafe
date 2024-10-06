@@ -132,6 +132,16 @@ figcaption {
     border: 2px solid #d3b673; /* Goldish border */
 }
 
+.host-section {
+    background-color: #fff8dc; /* Cornsilk background for a paper-like effect */
+    width: 80%; /* Width of the host section */
+    padding: 20px; /* Padding for the section */
+    margin: 20px auto; /* Center the section */
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid #d3b673; /* Goldish border to match the menu section */
+}
+
+
 /* Media query for larger screens */
 @media (min-width: 750px) {
     body {
