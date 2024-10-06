@@ -20,17 +20,17 @@ All text colors have been selected to provide a good contrast against the backgr
 /* Base styles for mobile screens */
 body {
     background-color: #EDDCBA; /* Background color for body */
-    color: #0D0D0D;          /* Text color for body */
+    color: #0D0D0D; /* Text color for body */
     font-family: Arial, sans-serif; /* Font family for body */
 }
 
 /* Aside styles */
 aside {
     background-color: #efddb9; /* Use a contrasting color from your palette */
-    color: #1f1d1d;            /* Text color for the aside */
-    padding: 15px;             /* Add some padding */
-    margin: 15px 0;           /* Margin to create space above and below */
-    border-radius: 5px;       /* Optional: rounded corners */
+    color: #1f1d1d; /* Text color for the aside */
+    padding: 15px; /* Add some padding */
+    margin: 15px 0; /* Margin to create space above and below */
+    border-radius: 5px; /* Optional: rounded corners */
 }
 
 /* Main content area styles */
@@ -42,9 +42,9 @@ main {
 
 /* CSS for all images in the main content */
 main img {
-    width: 40%;      /* Default width for larger screens */
-    height: auto;    /* Maintain the aspect ratio */
-    display: block;  /* Ensures there’s no extra space below the image */
+    width: 40%; /* Default width for larger screens */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Ensures there’s no extra space below the image */
 }
 
 /* Header styles for the image will leave it at the top for our logo*/
@@ -67,7 +67,6 @@ nav a:hover {
     font-size: 1.1em; /* Increase size on hover */
 }
 
-
 /* New styles for menu items */
 ul {
     list-style-type: none; /* Removes bullets */
@@ -88,10 +87,14 @@ dd {
 
 /* Cat images styles */
 .cat-figure {
-    text-align: inline-block;
-    margin: 20px;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack image and caption vertically */
+    align-items: center; /* Center horizontally */
+    margin: 20px auto; /* Center figures with auto left/right margins */
+    text-align: center; /* Center captions under images */
 }
 
+/* Adjusting the cat image class */
 .cat-image {
     border-radius: 50%; /* Makes images circular */
     width: 80px; /* Default for small screens */
@@ -108,8 +111,8 @@ figcaption {
 /* Media query for larger screens */
 @media (min-width: 750px) {
     body {
-        background-color: #F5E5C3; /* Background color for small screens */
-        color: #0D0D0D;          /* Text color for small screens */
+        background-color: #F5E5C3; /* Background color for large screens */
+        color: #0D0D0D; /* Text color for large screens */
     }
 
     /* Header text styles for small screens */
@@ -123,4 +126,3 @@ figcaption {
         height: 180px; /* Height for large screens */
     }
 }
-
