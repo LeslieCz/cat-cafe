@@ -5,80 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Chez Fur</title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/ChezFur.css">
+    <style>
+    </style>
 </head>
 <body>
     <header>
         <h1>Chez Fur</h1> <!-- This remains as the top-level heading -->
         <h2>by Suzy Schaffer</h2>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="our_hosts.html">Our Hosts</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <!-- Added aside for additional information -->
-        <aside>
-            Enjoy our food while you visit with our friendly hosts! We have selections for appetites big and small.
-        </aside>
-
+        <div class="row">
+            <div class="column left"> <!-- Navigation and Aside in left column -->
+                <!-- Moved nav from header to main -->
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="our_hosts.html">Our Hosts</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- Added aside for additional information -->
+                <!-- Moved aside into left column -->
+                <aside>
+                    Enjoy our food while you visit with our friendly hosts! We have selections for appetites big and small.
+                </aside>
+            </div>
+            <div class="column right"> <!-- Images and Menu in right column -->        
                 <!-- Add the image of the eye here -->
                 <div style="text-align: center; margin: 20px 0;">
                     <img src="../images/eye.png" alt="Delicious food options at Chez Fur" style="width: 100%; max-width: 300px; height: auto;" class="centered-image">
                 </div>
-
-        <section class="menu-section">
-            <h2 class="menu-title">Our Menu</h2>
-            <ul class="menu-items">
-                <li>
-                    <h3>Nibbles</h3>
-                    <dl>
-                        <dt>Purrfect Salad</dt>
-                        <dd>Small salad with arugula, tomatoes, carrots, cucumber, and crunchy croutons with vinaigrette dressing. Add just a pinch of catnip for a minty touch -- Sure to get our hosts’ attention. $7</dd>
-                    </dl>
-                    <div style="text-align: center; margin-top: 10px;">
-                        <!-- I found this image through a royalty free picture website https://www.pexels.com/search/salad%20with%20cat/ -->
-                        <img src="../images/salad.png" alt="Purrfect Salad" style="width: 100%; max-width: 300px; height: auto;" class="centered-image">
-                    </div>
-                </li>
-                <li>
-                    <h3>Fancy Feasts</h3>
-                    <dl>
-                        <dt>Too Too Tuna</dt>
-                        <dd>A favorite among all our hosts. Fresh Albacore Tuna with lettuce, tomato, vegan mayo and your choice of white, wheat, or gluten-free bread. $12.</dd>
-                    </dl>
-                </li>
-                <li>
-                    <h3>Treats</h3>
-                    <dl>
-                        <dt>Chocolate Chip Cookies</dt>
-                        <dd>Freshly baked cookies loaded with semi-sweet chocolate chips. A classic favorite! $3</dd>
-                    </dl>
-                </li>
-                <li>
-                    <h3>Drinks</h3>
-                    <dl>
-                        <dt>Catnip Tea</dt>
-                        <dd>Refreshing tea infused with a hint of catnip. Perfect for a warm day! $5</dd>
-                        <dt>Meowcha</dt>
-                        <dd>Our signature cat-themed mocha with a sprinkle of cocoa. $4</dd>
-                    </dl>
-                </li>
-            </ul>
-
-            <!-- Add Allergy Information -->
-            <p class="allergy-info">
-                Please inform the staff of any food sensitivities before placing your order.
-            </p>
-        </section>
+                <section class="menu-section">
+                    <h2 class="menu-title">Our Menu</h2>
+                    <ul class="menu-items">
+                        <li>
+                            <h3>Nibbles</h3>
+                            <dl>
+                                <dt>Purrfect Salad</dt>
+                                <dd>Small salad with arugula, tomatoes, carrots, cucumber, and crunchy croutons with vinaigrette dressing. Add just a pinch of catnip for a minty touch -- Sure to get our hosts’ attention. $7</dd>
+                            </dl>
+                            <div style="text-align: center; margin-top: 10px;">
+                                <!-- I found this image through a royalty free picture website https://www.pexels.com/search/salad%20with%20cat/ -->
+                                <img src="../images/salad.png" alt="Purrfect Salad" style="width: 100%; max-width: 300px; height: auto;" class="centered-image">
+                            </div>
+                        </li>
+                        <li>
+                            <h3>Fancy Feasts</h3>
+                            <dl>
+                                <dt>Too Too Tuna</dt>
+                                <dd>A favorite among all our hosts. Fresh Albacore Tuna with lettuce, tomato, vegan mayo and your choice of white, wheat, or gluten-free bread. $12.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <h3>Treats</h3>
+                            <dl>
+                                <dt>Chocolate Chip Cookies</dt>
+                                <dd>Freshly baked cookies loaded with semi-sweet chocolate chips. A classic favorite! $3</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <h3>Drinks</h3>
+                            <dl>
+                                <dt>Catnip Tea</dt>
+                                <dd>Refreshing tea infused with a hint of catnip. Perfect for a warm day! $5</dd>
+                                <dt>Meowcha</dt>
+                                <dd>Our signature cat-themed mocha with a sprinkle of cocoa. $4</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>    
     </main>
 
     <!-- Footer section that includes copyright and contact info -->
     <footer>
+        <!-- Moved allergy-info from main to footer -->
+        <p class="allergy-info">
+            Please inform the staff of any food sensitivities before placing your order.
+        </p>
         <p>Copyright &copy; 2024 Suzy Schaffer</p>
         <p><a href="mailto:leslie@chavez.com">leslie@chavez.com</a></p>
     </footer>

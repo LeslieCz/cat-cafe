@@ -28,9 +28,10 @@ body {
 aside {
     background-color: #ecd6a9; /* Use a contrasting color from your palette */
     color: #1f1d1d; /* Text color for the aside */
-    padding: 15px; /* Add some padding */
-    margin: 15px 0; /* Margin to create space above and below */
-    border-radius: 5px; /* Optional: rounded corners */
+    padding: 20px; /* Add some padding to avoid crowding*/
+    margin: 20px 0; /* Margin to create space above and below */
+    border-radius: 15px; /* Round the corners of aside */
+    border: 2px solid #ad2e2e; /*Add solid border to aside*/
 }
 
 /* Main content area styles */
@@ -77,10 +78,16 @@ nav a:focus {
 ul {
     list-style-type: none; /* Removes bullets */
     padding: 0; /* Removes default padding */
+    text-align: center; /*centers navigation bar*/
+    
 }
 
-li {
+nav li {
     font-size: 1.25em; /* Makes list items larger */
+    background-color: #d8d8d8;
+    display: inline; /*Horizontal nav bar for small screen*/
+    margin: 5px; /*Small margin between the list items*/
+    padding: 10px; /*add padding to avoid crowding*/
 }
 
 dt {
@@ -127,6 +134,7 @@ figcaption {
     color: #B33232; /* Tomato color for emphasis */
     font-weight: bold; /* Bold text */
     margin-top: 20px; /* Space above */
+    text-align: center; /*center the allergy info in footer*/
 }
 
 .menu-section {
@@ -172,4 +180,38 @@ figcaption {
         width: 180px; /* Width for large screens */
         height: 180px; /* Height for large screens */
     }
+
+
+    nav li { 
+        display: block; /*Vertical navigation bar for large screen*/
+        width: 100px; /*Width for button appearance*/
+        background-color: #d8d8d8; /*Background color for button appearance*/
+        margin: 10px; /*Vertical space between links*/
+        padding: 10px; /*Padding for space between text and edge of "button"*/
+        text-align: center; /*Center the text within the "button"*/
+      }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+        float: left; 
+        padding: 10px;
+      }
+    
+    /* Left column styles */
+    .left {
+        width: 20%; /*Smaller percentages to accomodate margin between columns*/
+    }
+    
+    /* Right column styles */
+    .right {
+        width: 70% /*Smaller percentages to accomodate margin between columns*/
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
 }
