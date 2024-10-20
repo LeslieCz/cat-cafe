@@ -107,6 +107,13 @@ dd {
     text-align: center; /* Center captions under images */
 }
 
+/* Flexbox styles for the image gallery */
+.image-gallery {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center items within the container */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+}
+
 /* Adjusting the cat image class */
 .cat-image {
     border-radius: 50%; /* Makes images circular */
