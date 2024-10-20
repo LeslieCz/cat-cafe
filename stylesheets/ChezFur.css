@@ -114,6 +114,19 @@ dd {
     flex-wrap: wrap; /* Allow items to wrap onto the next line */
 }
 
+.sponser-gallery {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center items within the container */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    margin: 40px
+}
+
+.sponser-gallery img {
+    width: 100px; /* Maintain image width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Add margin around each image */
+}
+
 /* Adjusting the cat image class */
 .cat-image {
     border-radius: 50%; /* Makes images circular */
