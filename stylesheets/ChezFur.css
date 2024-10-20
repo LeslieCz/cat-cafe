@@ -57,37 +57,33 @@ header {
     background-size: contain;
 }
 
+.navcontainer {
+    display: flex; /* Enable flexbox */
+    flex-direction: row; /* Default to vertical for large screens */
+    align-items: center; /* Center items horizontally */
+}
+
 /* Navigation styles */
-nav a {
+.navcontainer a {
     color: #ad2e2e; /* Original link color */
     text-decoration: none; /* Remove underline */
     transition: color 0.3s, font-size 0.3s;
+    display: block; /* Makes the entire area of the link clickable */
+    width: 100px; /* Set a width for the navigation links */
+    margin: 10px; /* Vertical space between links */
+    padding: 10px; /* Padding for space around the text */
+    text-align: center; /* Center the text within the "button" */
+    background-color: #d8d8d8; /* Background color for button appearance */
 }
 
-nav a:hover {
+.navcontainer a:hover {
     color: #FF6347; /* Updated hover color */
     font-size: 1.1em; /* Increase size on hover */
 }
 
-nav a:focus {
+.navcontainer a:focus {
     outline: none; /* Remove default outline for focused links */
     border-bottom: 2px solid #FF6347; /* Add an underline effect on focus */
-}
-
-/* New styles for menu items */
-ul {
-    list-style-type: none; /* Removes bullets */
-    padding: 0; /* Removes default padding */
-    text-align: center; /*centers navigation bar*/
-    
-}
-
-nav li {
-    font-size: 1.25em; /* Makes list items larger */
-    background-color: #d8d8d8;
-    display: inline; /*Horizontal nav bar for small screen*/
-    margin: 5px; /*Small margin between the list items*/
-    padding: 10px; /*add padding to avoid crowding*/
 }
 
 dt {
@@ -185,16 +181,17 @@ figcaption {
 
 /* Media query for larger screens */
 @media (min-width: 750px) {
+    body {
+        background-color: #F5E5C3; /* Background color for large screens */
+        color: #0D0D0D; /* Text color for large screens */
+    }
+
     header{
         background-image: url(../images/LogoLarge.png);
         min-height: 50px;
         background-repeat: no-repeat;
         background-position: right top;
         background-size: contain;
-    }
-    body {
-        background-color: #F5E5C3; /* Background color for large screens */
-        color: #0D0D0D; /* Text color for large screens */
     }
 
     /* Header text styles for small screens */
@@ -208,15 +205,24 @@ figcaption {
         height: 180px; /* Height for large screens */
     }
 
+    .navcontainer {
+        flex-direction: column; /* Change to vertical for large screens */
+        align-items: center; /* Center items horizontally */
+    }
 
-    nav li { 
+    .navcontainer a { 
         display: block; /*Vertical navigation bar for large screen*/
         width: 100px; /*Width for button appearance*/
         background-color: #d8d8d8; /*Background color for button appearance*/
         margin: 10px; /*Vertical space between links*/
         padding: 10px; /*Padding for space between text and edge of "button"*/
         text-align: center; /*Center the text within the "button"*/
+        transition: background-color 0.3s; /* Smooth transition for hover effect */
       }
+
+    .navcontainer a:hover { 
+        background-color: #b0b0b0; /* Change background color on hover */
+    }
 
     /* Create two equal columns that floats next to each other */
     .column {
