@@ -109,7 +109,7 @@ dd {
 /* Flexbox styles for the image gallery */
 .image-gallery {
     display: flex; /* Enable Flexbox */
-    justify-content: center; /* Center items within the container */
+    justify-content: space-around; /* Center items within the container */
     flex-wrap: wrap; /* Allow items to wrap onto the next line */
 }
 
@@ -138,6 +138,12 @@ dd {
 figcaption {
     font-weight: bold; /* Makes captions bold */
     margin-top: 10px; /* Space between image and caption */
+}
+
+.menu-items {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
 }
 
 .menu-title {
