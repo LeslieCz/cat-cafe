@@ -39,6 +39,9 @@ main {
     background-color: #C6B89C;
     color: #000000;
     text-align: center; /* Center all text and images in main */
+    height: 100vh; /* Set height to 100% of the viewport height */
+    overflow: scroll; /* Enable scrolling if content overflows */
+    width: 100%;
 }
 
 /* CSS for all images in the main content */
@@ -222,6 +225,13 @@ figcaption {
 
     .navcontainer a:hover { 
         background-color: #b0b0b0; /* Change background color on hover */
+    }
+
+    /* Flexbox container for large screens */
+    .flex-container {
+        display: flex; /* Enable flexbox */
+        flex-direction: row; /* Horizontal layout */
+        height: 100vh; /* Full viewport height */
     }
 
     /* Create two equal columns that floats next to each other */
