@@ -116,7 +116,6 @@ dd {
 .sponser-gallery {
     display: flex; /* Enable Flexbox */
     justify-content: center; /* Center items within the container */
-    flex-wrap: wrap; /* Allow items to wrap onto the next line */
     margin: 40px
 }
 
