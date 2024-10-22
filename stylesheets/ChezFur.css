@@ -187,6 +187,31 @@ figcaption {
     height: auto; /* Maintains aspect ratio */
 }
 
+.grid-container {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns for large screens */
+    gap: 10px; /* Space between grid items */
+}
+
+/* Specific styles for wide and long images */
+.grid-item {
+    overflow: hidden; /* Ensure no overflow for images */
+}
+
+.grid-item img {
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust wide and long images to span multiple columns/rows */
+.grid-item.wide {
+    grid-column: span 2; /* Wide image spans 2 columns */
+}
+
+.grid-item.long {
+    grid-row: span 2; /* Long image spans 2 rows */
+}
+
 /* Media query for larger screens */
 @media (min-width: 750px) {
     body {
@@ -230,6 +255,10 @@ figcaption {
 
     .navcontainer a:hover { 
         background-color: #b0b0b0; /* Change background color on hover */
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
     }
 
     /* Flexbox container for large screens */
