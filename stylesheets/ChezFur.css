@@ -189,18 +189,20 @@ figcaption {
 
 .grid-container {
     display: grid; /* Enable grid layout */
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns for large screens */
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns for small screens */
     gap: 10px; /* Space between grid items */
 }
 
 /* Specific styles for wide and long images */
 .grid-item {
     overflow: hidden; /* Ensure no overflow for images */
+    width: 100%; /* Full width of the grid item */
 }
 
 .grid-item img {
     width: 100%; /* Responsive width */
     height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Set a max height to ensure images don't get too large */
 }
 
 /* Adjust wide and long images to span multiple columns/rows */
