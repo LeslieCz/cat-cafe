@@ -261,6 +261,54 @@ figcaption {
         grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
     }
 
+    /* Grid item styles */
+    .grid-container img {
+    background-color: rgba(255, 255, 255, 0.8); /* Background color for images */
+    border-radius: 10px; /* Rounded corners for images */
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+    gap: 10px; /* Space between grid items */
+    }
+
+    /* Style for the wide image */
+    .wide-img {
+    grid-column: span 2; /* Spans 2 columns */
+    }
+
+    /* Style for the large image */
+    .large-img {
+        grid-row: span 2; /* Spans 2 rows */
+    }
+
+    /* Style for regular images to take up a single grid cell */
+    .grid-container img {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* 5 columns for large screens */
+        width: 100%;
+        height: auto;
+        border-radius: 10px; /* Optional: rounded corners */
+        gap: 10px;
+    }
+
+    /* Style for the wide image */
+    .wide-img {
+        grid-column: span 2; /* Spans 2 columns */
+    }
+
+    /* Style for the large image */
+    .large-img {
+        grid-row: span 2; /* Spans 2 rows */
+    }
+
+    /* Style for all images within the grid container */
+    .grid-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px; /* Optional: rounded corners */
+    }
+
+
     /* Flexbox container for large screens */
     .flex-container {
         display: flex; /* Enable flexbox */
