@@ -1,40 +1,49 @@
 /* faq-new-style.css */
 
 /* Apply a universal color theme */
-body, main, .new-accordion-header, .new-accordion-body, .new-footer {
+body, main, .faq-accordion-header, .faq-accordion-body, .faq-footer {
     background-color: #EDDCBA; /* Apply your theme color */
     color: #0D0D0D; /* Text color for readability */
 }
 
 /* Header and Navigation */
-.new-header, .new-navbar {
+.faq-header, .faq-navbar {
     background-color: #C6B89C;
     color: #0D0D0D;
 }
 
-.new-navbar .new-nav-link {
+/* Header styles for the image will leave it at the top for our logo*/
+header {
+    background-image: url('../images/LogoSmall.png');
+    min-height: 50px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+}
+
+.faq-navbar .faq-nav-link {
     color: #0D0D0D;
 }
 
-.new-navbar .new-nav-link:hover {
+.faq-navbar .faq-nav-link:hover {
     color: #B33232; /* Slightly darker for hover effect */
 }
 
 /* Accordion FAQ Styling */
-.new-accordion-header {
+.faq-accordion-header {
     background-color: #C6B89C;
 }
 
-.new-accordion-button {
+.faq-accordion-button {
     color: #0D0D0D;
 }
 
-.new-accordion-button:hover {
+.faq-accordion-button:hover {
     color: #ad2e2e;
 }
 
 /* Footer */
-.new-footer {
+.faq-footer {
     background-color: #C6B89C;
     color: #0D0D0D;
     padding: 10px;
@@ -42,7 +51,7 @@ body, main, .new-accordion-header, .new-accordion-body, .new-footer {
 }
 
 /* Circular Photo Gallery Styles */
-.new-photo-gallery {
+.faq-photo-gallery {
     background-color: #c9ba9b;
     padding: 20px 0;
     text-align: center; /* Center the text within the gallery */
@@ -51,10 +60,46 @@ body, main, .new-accordion-header, .new-accordion-body, .new-footer {
     flex-wrap: wrap; /* Allow wrapping of images */
 }
 
-.new-photo-gallery img {
+.faq-photo-gallery img {
     border: 3px solid #c9ba9b; /* Border color for images */
     padding: 5px;
     margin: 5px; /* Add margin to space images */
     max-width: 100%; /* Ensure images are responsive */
     height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Query for Large Screens (Desktop and tablets) */
+@media (min-width: 750px) {
+    .faq-header h1 {
+        font-size: 2.5rem; /* Larger header size for larger screens */
+    }
+
+    header{
+        background-image: url(../images/LogoLarge.png);
+        min-height: 50px;
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: contain;
+    }
+
+    .faq-header h2 {
+        font-size: 1.5rem; /* Larger subheader size for larger screens */
+    }
+
+    .faq-navbar {
+        font-size: 1rem; /* Standard navbar font size */
+    }
+
+    .faq-footer {
+        font-size: 1rem; /* Standard footer font size */
+    }
+
+    .faq-photo-gallery {
+        flex-direction: row; /* Align images horizontally on larger screens */
+    }
+
+    .faq-photo-gallery img {
+        width: 180px; /* Set a fixed size for images on larger screens */
+        margin: 180px; /* Increased space between images */
+    }
 }
