@@ -6,7 +6,7 @@
     <title>Contact - Chez Fur</title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/ChezFur.css">
 </head>
-<body>
+<body onload="shoWelcomeMesssage()">
     <header>
         <h1>Chez Fur</h1>
         <h2>by Suzy Schaffer</h2>
@@ -102,6 +102,13 @@
     <footer>
         <p>Copyright &copy; 2024 Suzy Schaffer</p>
         <p><a href="mailto:leslie@chavez.com">leslie@chavez.com</a></p>
+        <!-- JavaScript to display current date in footer -->
+        <script>
+            var today = new Date();
+            var dateString = today.toDateString();  // Example: "Sat Nov 10 2024"
+            document.write("<p>Current Date: " + dateString + "</p>");
+        </script>
     </footer>
+    <script src="../scripts/alertScript.js"></script>
 </body>
 </html>
